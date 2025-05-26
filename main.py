@@ -122,11 +122,13 @@ class AppLauncher(QMainWindow):
         self.cancel_timer_btn.setEnabled(False)
         
     def select_all(self):
+        self.cancel_timer()
         for cb in self.checkboxes:
             cb.setChecked(True)
         self.reset_timer()
         
     def deselect_all(self):
+        self.cancel_timer()
         for cb in self.checkboxes:
             cb.setChecked(False)
         self.reset_timer()

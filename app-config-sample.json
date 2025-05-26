@@ -4,7 +4,9 @@
             "name": "LibreWolf (Gmail & WhatsApp)",
             "path": "<path>\\librewolf-135.0.1-1\\LibreWolf-Portable.exe",
             "args": [
+                "-new-tab",
                 "https://mail.google.com/",
+                "-new-tab",
                 "https://web.whatsapp.com/"
             ],
             "enabled": true
@@ -13,6 +15,7 @@
             "name": "LibreWolf (YouTube)",
             "path": "<path>\\librewolf-135.0.1-1\\LibreWolf-Portable.exe",
             "args": [
+                "-new-window",
                 "https://www.youtube.com/"
             ],
             "enabled": true
