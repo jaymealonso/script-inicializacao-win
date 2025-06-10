@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 import json
+import time
 import winshell
 from win32com.client import Dispatch
 from PyQt5.QtWidgets import (
@@ -154,6 +155,7 @@ class AppLauncher(QMainWindow):
                         subprocess.Popen(app["path"])
                 except Exception as e:
                     print(f"Error launching {app['name']}: {e}")
+            time.sleep(0.25)
 
         self.close()
 
